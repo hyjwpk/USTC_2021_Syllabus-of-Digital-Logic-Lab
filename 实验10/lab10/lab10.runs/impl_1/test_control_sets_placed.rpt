@@ -1,0 +1,106 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Dec  9 19:20:15 2021
+| Host         : LAPTOP-HYJWPK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file test_control_sets_placed.rpt
+| Design       : test
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    93 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    28 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     9 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              27 |           13 |
+| No           | No                    | Yes                    |              12 |            5 |
+| No           | Yes                   | No                     |              16 |            6 |
+| Yes          | No                    | No                     |              52 |           19 |
+| Yes          | No                    | Yes                    |              12 |            3 |
+| Yes          | Yes                   | No                     |              76 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------+----------------------------------+------------------+----------------+
+|  Clock Signal  |         Enable Signal         |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+-------------------------------+----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | rx1/rx_reg_71_out             |                                  |                1 |              1 |
+|  clk_IBUF_BUFG | rx1/rx_reg_47_out             |                                  |                1 |              1 |
+|  clk_IBUF_BUFG | rx1/rx_reg_113_out            |                                  |                1 |              1 |
+|  clk_IBUF_BUFG | rx1/rx_reg_63_out             |                                  |                1 |              1 |
+|  clk_IBUF_BUFG | rx1/rx_reg_55_out             |                                  |                1 |              1 |
+|  clk_IBUF_BUFG | rx1/rx_reg_211_out            |                                  |                1 |              1 |
+|  clk_IBUF_BUFG | rx1/rx_reg_39_out             |                                  |                1 |              1 |
+|  clk_IBUF_BUFG | rx1/rx_reg_015_out            |                                  |                1 |              1 |
+|  clk_IBUF_BUFG | signal_edge1/rx_ready_edge    |                                  |                1 |              4 |
+|  clk_IBUF_BUFG | signal_edge1/state_reg[1][0]  |                                  |                1 |              4 |
+|  clk_IBUF_BUFG | data/tx1/tx_cnt[4]_i_2__0_n_0 | data/tx1/tx_cnt[4]_i_1__0_n_0    |                1 |              4 |
+|  clk_IBUF_BUFG | error1/tx1/tx_cnt0            | error1/tx1/tx_cnt[4]_i_1_n_0     |                1 |              4 |
+|  clk_IBUF_BUFG | error1/tx1/tx_reg0            |                                  |                1 |              4 |
+|  clk_IBUF_BUFG | error1/tx_data[5]_i_2_n_0     | error1/signal_edge1/start_edge   |                1 |              4 |
+|  clk_IBUF_BUFG | rx1/rx_cnt[3]_i_1_n_0         | rst_IBUF                         |                1 |              4 |
+|  clk_IBUF_BUFG |                               | data/tx1/div_cnt[7]_i_1__1_n_0   |                3 |              8 |
+|  clk_IBUF_BUFG |                               | error1/tx1/div_cnt[7]_i_1__0_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG | signal_edge1/E[0]             |                                  |                1 |              8 |
+|  clk_IBUF_BUFG | signal_edge1/state_reg[3][0]  |                                  |                2 |              8 |
+|  clk_IBUF_BUFG | data/signal_edge1/E[0]        |                                  |                3 |              8 |
+|  clk_IBUF_BUFG | data/tx1/tx_reg0              |                                  |                2 |              8 |
+|  clk_IBUF_BUFG | rx1/p_0_in                    |                                  |                2 |              8 |
+|  clk_IBUF_BUFG | rx1/p_0_in__0                 |                                  |                2 |              8 |
+|  clk_IBUF_BUFG | rx1/rx_data[7]_i_1_n_0        | rst_IBUF                         |                2 |              8 |
+|  clk_IBUF_BUFG |                               | rst_IBUF                         |                5 |             12 |
+|  clk_IBUF_BUFG |                               |                                  |               13 |             27 |
+|  clk_IBUF_BUFG | data/counter[0]_i_2_n_0       | data/signal_edge1/start_edge     |                8 |             32 |
+|  clk_IBUF_BUFG | error1/counter[0]_i_1_n_0     | error1/signal_edge1/start_edge   |                8 |             32 |
++----------------+-------------------------------+----------------------------------+------------------+----------------+
+
+

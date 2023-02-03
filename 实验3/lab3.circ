@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+  </circuit>
+  <circuit name="双稳态电路">
+    <a name="circuit" val="双稳态电路"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(630,280)" to="(650,280)"/>
+    <wire from="(670,330)" to="(690,330)"/>
+    <wire from="(330,280)" to="(360,280)"/>
+    <wire from="(330,330)" to="(360,330)"/>
+    <wire from="(430,330)" to="(450,330)"/>
+    <wire from="(390,280)" to="(410,280)"/>
+    <wire from="(570,280)" to="(600,280)"/>
+    <wire from="(570,330)" to="(600,330)"/>
+    <wire from="(330,280)" to="(330,300)"/>
+    <wire from="(330,310)" to="(330,330)"/>
+    <wire from="(650,280)" to="(690,280)"/>
+    <wire from="(630,330)" to="(670,330)"/>
+    <wire from="(670,300)" to="(670,330)"/>
+    <wire from="(570,300)" to="(670,300)"/>
+    <wire from="(330,310)" to="(410,310)"/>
+    <wire from="(650,280)" to="(650,310)"/>
+    <wire from="(430,300)" to="(430,330)"/>
+    <wire from="(410,280)" to="(410,310)"/>
+    <wire from="(570,310)" to="(650,310)"/>
+    <wire from="(330,300)" to="(430,300)"/>
+    <wire from="(570,280)" to="(570,300)"/>
+    <wire from="(570,310)" to="(570,330)"/>
+    <wire from="(410,280)" to="(450,280)"/>
+    <wire from="(390,330)" to="(430,330)"/>
+    <comp lib="6" loc="(496,378)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="1" loc="(630,280)" name="NOT Gate"/>
+    <comp lib="1" loc="(390,280)" name="NOT Gate"/>
+    <comp lib="0" loc="(450,280)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(630,330)" name="NOT Gate"/>
+    <comp lib="0" loc="(690,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(540,280)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(300,280)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(450,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(690,280)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(390,330)" name="NOT Gate"/>
+  </circuit>
+  <circuit name="或非SR锁存器">
+    <a name="circuit" val="或非SR锁存器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="65" stroke="#000000" stroke-width="2" width="61" x="50" y="43"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="79">SR Latch</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="61" y="63">R</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="61" y="95">S</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="97" y="63">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="95">~Q</text>
+      <circ-port height="8" pin="300,220" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="300,380" width="8" x="46" y="86"/>
+      <circ-port height="10" pin="510,240" width="10" x="105" y="55"/>
+      <circ-port height="10" pin="510,360" width="10" x="105" y="85"/>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
+    </appear>
+    <wire from="(320,260)" to="(350,260)"/>
+    <wire from="(320,340)" to="(350,340)"/>
+    <wire from="(410,240)" to="(460,240)"/>
+    <wire from="(460,240)" to="(510,240)"/>
+    <wire from="(300,220)" to="(350,220)"/>
+    <wire from="(300,380)" to="(350,380)"/>
+    <wire from="(490,360)" to="(510,360)"/>
+    <wire from="(320,260)" to="(320,280)"/>
+    <wire from="(320,320)" to="(320,340)"/>
+    <wire from="(320,320)" to="(460,320)"/>
+    <wire from="(320,280)" to="(490,280)"/>
+    <wire from="(410,360)" to="(490,360)"/>
+    <wire from="(460,240)" to="(460,320)"/>
+    <wire from="(490,280)" to="(490,360)"/>
+    <comp lib="1" loc="(410,240)" name="NOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(419,432)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(510,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(510,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(300,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(300,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+    </comp>
+    <comp lib="1" loc="(410,360)" name="NOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+  </circuit>
+  <circuit name="与非SR锁存器">
+    <a name="circuit" val="与非SR锁存器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(320,260)" to="(350,260)"/>
+    <wire from="(320,340)" to="(350,340)"/>
+    <wire from="(410,240)" to="(460,240)"/>
+    <wire from="(460,240)" to="(510,240)"/>
+    <wire from="(300,220)" to="(350,220)"/>
+    <wire from="(300,380)" to="(350,380)"/>
+    <wire from="(490,360)" to="(510,360)"/>
+    <wire from="(320,260)" to="(320,280)"/>
+    <wire from="(320,320)" to="(320,340)"/>
+    <wire from="(320,320)" to="(460,320)"/>
+    <wire from="(320,280)" to="(490,280)"/>
+    <wire from="(410,360)" to="(490,360)"/>
+    <wire from="(460,240)" to="(460,320)"/>
+    <wire from="(490,280)" to="(490,360)"/>
+    <comp lib="6" loc="(419,432)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(300,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+    </comp>
+    <comp lib="0" loc="(510,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(410,240)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(410,360)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(510,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(300,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+    </comp>
+  </circuit>
+  <circuit name="D锁存器">
+    <a name="circuit" val="D锁存器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="95">~Q</text>
+      <rect fill="none" height="65" stroke="#000000" stroke-width="2" width="61" x="50" y="43"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="97" y="63">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="79">D Latch</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="62" y="94">D</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="63">CLK</text>
+      <circ-port height="8" pin="350,350" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="350,400" width="8" x="46" y="86"/>
+      <circ-port height="10" pin="630,360" width="10" x="105" y="55"/>
+      <circ-port height="10" pin="630,390" width="10" x="105" y="85"/>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
+    </appear>
+    <wire from="(390,380)" to="(480,380)"/>
+    <wire from="(390,350)" to="(480,350)"/>
+    <wire from="(610,360)" to="(630,360)"/>
+    <wire from="(610,390)" to="(630,390)"/>
+    <wire from="(450,370)" to="(480,370)"/>
+    <wire from="(400,370)" to="(420,370)"/>
+    <wire from="(350,400)" to="(400,400)"/>
+    <wire from="(400,400)" to="(480,400)"/>
+    <wire from="(390,350)" to="(390,380)"/>
+    <wire from="(400,370)" to="(400,400)"/>
+    <wire from="(350,350)" to="(390,350)"/>
+    <wire from="(510,390)" to="(550,390)"/>
+    <wire from="(510,360)" to="(550,360)"/>
+    <comp lib="1" loc="(450,370)" name="NOT Gate"/>
+    <comp lib="0" loc="(630,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(610,360)" name="或非SR锁存器"/>
+    <comp lib="6" loc="(488,444)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(630,390)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(510,360)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(350,350)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="1" loc="(510,390)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(350,400)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+  </circuit>
+  <circuit name="复位置0D锁存器">
+    <a name="circuit" val="复位置0D锁存器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="65" stroke="#000000" stroke-width="2" width="61" x="50" y="43"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="97" y="63">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="95">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="79">D Latch</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="62" y="94">D</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="63">CLK</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="72" y="105">RST0</text>
+      <ellipse cx="47.0" cy="100.0" fill="none" rx="3.0" ry="3.0" stroke="#000000"/>
+      <circ-port height="8" pin="370,390" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="370,440" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="370,480" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="770,420" width="10" x="105" y="55"/>
+      <circ-port height="10" pin="770,450" width="10" x="105" y="85"/>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
+    </appear>
+    <wire from="(410,420)" to="(500,420)"/>
+    <wire from="(410,390)" to="(500,390)"/>
+    <wire from="(570,400)" to="(570,410)"/>
+    <wire from="(550,430)" to="(550,440)"/>
+    <wire from="(530,430)" to="(550,430)"/>
+    <wire from="(580,430)" to="(600,430)"/>
+    <wire from="(470,410)" to="(500,410)"/>
+    <wire from="(640,420)" to="(690,420)"/>
+    <wire from="(640,450)" to="(690,450)"/>
+    <wire from="(750,420)" to="(770,420)"/>
+    <wire from="(750,450)" to="(770,450)"/>
+    <wire from="(420,410)" to="(440,410)"/>
+    <wire from="(370,440)" to="(420,440)"/>
+    <wire from="(580,460)" to="(610,460)"/>
+    <wire from="(370,480)" to="(580,480)"/>
+    <wire from="(550,440)" to="(610,440)"/>
+    <wire from="(530,400)" to="(570,400)"/>
+    <wire from="(570,410)" to="(610,410)"/>
+    <wire from="(580,430)" to="(580,460)"/>
+    <wire from="(420,440)" to="(500,440)"/>
+    <wire from="(410,390)" to="(410,420)"/>
+    <wire from="(420,410)" to="(420,440)"/>
+    <wire from="(370,390)" to="(410,390)"/>
+    <wire from="(580,460)" to="(580,480)"/>
+    <comp lib="1" loc="(530,400)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(370,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(370,440)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp loc="(750,420)" name="或非SR锁存器"/>
+    <comp lib="0" loc="(370,480)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
+    <comp lib="1" loc="(640,420)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(470,410)" name="NOT Gate"/>
+    <comp lib="1" loc="(640,450)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(534,510)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="1" loc="(530,430)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(770,450)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(770,420)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+  </circuit>
+  <circuit name="复位置1D锁存器">
+    <a name="circuit" val="复位置1D锁存器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="79">D Latch</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="62" y="94">D</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="95" y="95">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="63">CLK</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="97" y="63">Q</text>
+      <ellipse cx="47.0" cy="100.0" fill="none" rx="3.0" ry="3.0" stroke="#000000"/>
+      <rect fill="none" height="65" stroke="#000000" stroke-width="2" width="61" x="50" y="43"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="72" y="105">RST1</text>
+      <circ-port height="8" pin="370,390" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="370,440" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="370,480" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="770,420" width="10" x="105" y="55"/>
+      <circ-port height="10" pin="770,450" width="10" x="105" y="85"/>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
+    </appear>
+    <wire from="(410,420)" to="(500,420)"/>
+    <wire from="(410,390)" to="(500,390)"/>
+    <wire from="(570,400)" to="(570,410)"/>
+    <wire from="(550,430)" to="(550,440)"/>
+    <wire from="(530,430)" to="(550,430)"/>
+    <wire from="(470,410)" to="(500,410)"/>
+    <wire from="(580,460)" to="(600,460)"/>
+    <wire from="(640,450)" to="(690,450)"/>
+    <wire from="(640,420)" to="(690,420)"/>
+    <wire from="(750,420)" to="(770,420)"/>
+    <wire from="(750,450)" to="(770,450)"/>
+    <wire from="(420,410)" to="(440,410)"/>
+    <wire from="(370,440)" to="(420,440)"/>
+    <wire from="(370,480)" to="(580,480)"/>
+    <wire from="(580,430)" to="(610,430)"/>
+    <wire from="(550,440)" to="(610,440)"/>
+    <wire from="(530,400)" to="(570,400)"/>
+    <wire from="(570,410)" to="(610,410)"/>
+    <wire from="(580,430)" to="(580,460)"/>
+    <wire from="(420,440)" to="(500,440)"/>
+    <wire from="(410,390)" to="(410,420)"/>
+    <wire from="(420,410)" to="(420,440)"/>
+    <wire from="(370,390)" to="(410,390)"/>
+    <wire from="(580,460)" to="(580,480)"/>
+    <comp lib="0" loc="(770,420)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(750,420)" name="或非SR锁存器"/>
+    <comp lib="1" loc="(470,410)" name="NOT Gate"/>
+    <comp lib="1" loc="(640,450)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(530,430)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(530,400)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(370,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(370,440)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(770,450)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(640,420)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(370,480)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
+    <comp lib="6" loc="(534,510)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+  </circuit>
+  <circuit name="D触发器">
+    <a name="circuit" val="D触发器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="65" stroke="#000000" stroke-width="2" width="61" x="50" y="43"/>
+      <polyline fill="none" points="50,45 60,52 51,58" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="79">D Trigger</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="73" y="56">CLK</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="99" y="55">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="60" y="104">D</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="104">~Q</text>
+      <circ-port height="8" pin="430,450" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="810,420" width="10" x="105" y="45"/>
+      <circ-port height="10" pin="810,450" width="10" x="105" y="95"/>
+      <circ-port height="8" pin="430,420" width="8" x="46" y="46"/>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="47"/>
+    </appear>
+    <wire from="(660,380)" to="(660,420)"/>
+    <wire from="(430,420)" to="(460,420)"/>
+    <wire from="(660,420)" to="(710,420)"/>
+    <wire from="(460,420)" to="(490,420)"/>
+    <wire from="(620,420)" to="(650,420)"/>
+    <wire from="(650,450)" to="(710,450)"/>
+    <wire from="(460,380)" to="(460,420)"/>
+    <wire from="(520,420)" to="(560,420)"/>
+    <wire from="(770,420)" to="(810,420)"/>
+    <wire from="(770,450)" to="(810,450)"/>
+    <wire from="(650,420)" to="(650,450)"/>
+    <wire from="(430,450)" to="(560,450)"/>
+    <wire from="(460,380)" to="(660,380)"/>
+    <comp loc="(770,420)" name="D锁存器"/>
+    <comp lib="1" loc="(520,420)" name="NOT Gate"/>
+    <comp lib="6" loc="(588,490)" name="Text">
+      <a name="text" val="D1"/>
+    </comp>
+    <comp lib="0" loc="(810,420)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(430,420)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(810,450)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(594,511)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="6" loc="(741,487)" name="Text">
+      <a name="text" val="D2"/>
+    </comp>
+    <comp loc="(620,420)" name="D锁存器"/>
+    <comp lib="0" loc="(430,450)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+  </circuit>
+  <circuit name="同步复位置0D触发器">
+    <a name="circuit" val="同步复位置0D触发器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(540,400)" to="(570,400)"/>
+    <wire from="(630,350)" to="(660,350)"/>
+    <wire from="(630,400)" to="(660,400)"/>
+    <wire from="(470,350)" to="(570,350)"/>
+    <wire from="(470,390)" to="(510,390)"/>
+    <wire from="(470,410)" to="(510,410)"/>
+    <comp lib="0" loc="(470,410)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="/RST"/>
+    </comp>
+    <comp lib="0" loc="(470,350)" name="Clock">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp loc="(630,350)" name="D触发器"/>
+    <comp lib="0" loc="(660,350)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(660,400)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(470,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="6" loc="(572,446)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="1" loc="(540,400)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+  </circuit>
+  <circuit name="异步复位置0D触发器">
+    <a name="circuit" val="异步复位置0D触发器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="73" y="56">CLK</text>
+      <rect fill="none" height="65" stroke="#000000" stroke-width="2" width="61" x="50" y="43"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="104">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="99" y="55">Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="60" y="94">D</text>
+      <polyline fill="none" points="50,45 60,52 51,58" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="82" y="70">D Trigger</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="71" y="105">RST0</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="84">ASYN</text>
+      <ellipse cx="47.0" cy="100.0" fill="none" rx="3.0" ry="3.0" stroke="#000000"/>
+      <circ-port height="8" pin="400,330" width="8" x="46" y="46"/>
+      <circ-port height="8" pin="400,360" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="400,400" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="860,330" width="10" x="105" y="45"/>
+      <circ-port height="10" pin="860,360" width="10" x="105" y="95"/>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="47"/>
+    </appear>
+    <wire from="(810,330)" to="(860,330)"/>
+    <wire from="(810,360)" to="(860,360)"/>
+    <wire from="(700,290)" to="(700,330)"/>
+    <wire from="(500,400)" to="(720,400)"/>
+    <wire from="(700,330)" to="(750,330)"/>
+    <wire from="(500,330)" to="(530,330)"/>
+    <wire from="(660,330)" to="(690,330)"/>
+    <wire from="(720,370)" to="(750,370)"/>
+    <wire from="(690,360)" to="(750,360)"/>
+    <wire from="(500,290)" to="(500,330)"/>
+    <wire from="(560,330)" to="(600,330)"/>
+    <wire from="(690,330)" to="(690,360)"/>
+    <wire from="(720,370)" to="(720,400)"/>
+    <wire from="(500,370)" to="(500,400)"/>
+    <wire from="(400,330)" to="(500,330)"/>
+    <wire from="(400,400)" to="(500,400)"/>
+    <wire from="(500,370)" to="(600,370)"/>
+    <wire from="(400,360)" to="(600,360)"/>
+    <wire from="(500,290)" to="(700,290)"/>
+    <comp loc="(810,330)" name="复位置0D锁存器"/>
+    <comp lib="0" loc="(860,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(400,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(400,400)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
+    <comp lib="0" loc="(400,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(860,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(628,397)" name="Text">
+      <a name="text" val="D1"/>
+    </comp>
+    <comp lib="1" loc="(560,330)" name="NOT Gate"/>
+    <comp lib="6" loc="(781,397)" name="Text">
+      <a name="text" val="D2"/>
+    </comp>
+    <comp lib="6" loc="(610,437)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp loc="(660,330)" name="复位置0D锁存器"/>
+  </circuit>
+  <circuit name="异步复位置1D触发器">
+    <a name="circuit" val="异步复位置1D触发器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="99" y="55">Q</text>
+      <rect fill="none" height="65" stroke="#000000" stroke-width="2" width="61" x="50" y="43"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="71" y="105">RST1</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="84">ASYN</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="60" y="94">D</text>
+      <polyline fill="none" points="50,45 60,52 51,58" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="73" y="56">CLK</text>
+      <ellipse cx="47.0" cy="100.0" fill="none" rx="3.0" ry="3.0" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="104">~Q</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="82" y="70">D Trigger</text>
+      <circ-port height="8" pin="400,330" width="8" x="46" y="46"/>
+      <circ-port height="8" pin="400,360" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="400,400" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="860,330" width="10" x="105" y="45"/>
+      <circ-port height="10" pin="860,360" width="10" x="105" y="95"/>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="47"/>
+    </appear>
+    <wire from="(810,330)" to="(860,330)"/>
+    <wire from="(810,360)" to="(860,360)"/>
+    <wire from="(700,290)" to="(700,330)"/>
+    <wire from="(500,400)" to="(720,400)"/>
+    <wire from="(700,330)" to="(750,330)"/>
+    <wire from="(500,330)" to="(530,330)"/>
+    <wire from="(660,330)" to="(690,330)"/>
+    <wire from="(720,370)" to="(750,370)"/>
+    <wire from="(690,360)" to="(750,360)"/>
+    <wire from="(500,290)" to="(500,330)"/>
+    <wire from="(560,330)" to="(600,330)"/>
+    <wire from="(690,330)" to="(690,360)"/>
+    <wire from="(720,370)" to="(720,400)"/>
+    <wire from="(500,370)" to="(500,400)"/>
+    <wire from="(400,330)" to="(500,330)"/>
+    <wire from="(400,400)" to="(500,400)"/>
+    <wire from="(500,370)" to="(600,370)"/>
+    <wire from="(400,360)" to="(600,360)"/>
+    <wire from="(500,290)" to="(700,290)"/>
+    <comp lib="0" loc="(860,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(628,397)" name="Text">
+      <a name="text" val="D1"/>
+    </comp>
+    <comp lib="0" loc="(400,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(400,400)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
+    <comp lib="1" loc="(560,330)" name="NOT Gate"/>
+    <comp loc="(810,330)" name="复位置1D锁存器"/>
+    <comp lib="6" loc="(781,397)" name="Text">
+      <a name="text" val="D2"/>
+    </comp>
+    <comp lib="0" loc="(860,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(610,437)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp loc="(660,330)" name="复位置1D锁存器"/>
+    <comp lib="0" loc="(400,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+  </circuit>
+  <circuit name="同步复位置0寄存器">
+    <a name="circuit" val="同步复位置0寄存器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="75" stroke="#000000" stroke-width="2" width="80" x="50" y="43"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="68" y="55">D_IN</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="106" y="55">D_OUT</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="68" y="95">CLK</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="76" y="113">RST_N0</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="72">REG4</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="84">SYN</text>
+      <ellipse cx="48.0" cy="109.0" fill="none" rx="3.0" ry="3.0" stroke="#000000"/>
+      <circ-port height="8" pin="290,330" width="8" x="46" y="46"/>
+      <circ-port height="8" pin="270,600" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="270,630" width="8" x="46" y="106"/>
+      <circ-port height="10" pin="840,330" width="10" x="125" y="45"/>
+      <circ-anchor facing="east" height="6" width="6" x="127" y="47"/>
+    </appear>
+    <wire from="(510,560)" to="(510,630)"/>
+    <wire from="(760,350)" to="(760,360)"/>
+    <wire from="(670,520)" to="(790,520)"/>
+    <wire from="(360,350)" to="(360,420)"/>
+    <wire from="(770,360)" to="(820,360)"/>
+    <wire from="(340,360)" to="(340,500)"/>
+    <wire from="(360,420)" to="(540,420)"/>
+    <wire from="(310,350)" to="(360,350)"/>
+    <wire from="(760,350)" to="(820,350)"/>
+    <wire from="(760,340)" to="(820,340)"/>
+    <wire from="(570,330)" to="(610,330)"/>
+    <wire from="(570,410)" to="(610,410)"/>
+    <wire from="(570,490)" to="(610,490)"/>
+    <wire from="(570,570)" to="(610,570)"/>
+    <wire from="(270,630)" to="(510,630)"/>
+    <wire from="(670,440)" to="(770,440)"/>
+    <wire from="(510,320)" to="(510,400)"/>
+    <wire from="(510,400)" to="(510,480)"/>
+    <wire from="(510,480)" to="(510,560)"/>
+    <wire from="(470,280)" to="(470,360)"/>
+    <wire from="(470,360)" to="(470,440)"/>
+    <wire from="(470,440)" to="(470,520)"/>
+    <wire from="(470,520)" to="(470,600)"/>
+    <wire from="(320,370)" to="(320,580)"/>
+    <wire from="(790,370)" to="(790,520)"/>
+    <wire from="(770,360)" to="(770,440)"/>
+    <wire from="(310,340)" to="(540,340)"/>
+    <wire from="(320,580)" to="(540,580)"/>
+    <wire from="(510,320)" to="(540,320)"/>
+    <wire from="(510,400)" to="(540,400)"/>
+    <wire from="(510,480)" to="(540,480)"/>
+    <wire from="(310,360)" to="(340,360)"/>
+    <wire from="(510,560)" to="(540,560)"/>
+    <wire from="(670,280)" to="(760,280)"/>
+    <wire from="(670,360)" to="(760,360)"/>
+    <wire from="(790,370)" to="(820,370)"/>
+    <wire from="(310,370)" to="(320,370)"/>
+    <wire from="(470,280)" to="(610,280)"/>
+    <wire from="(470,360)" to="(610,360)"/>
+    <wire from="(470,440)" to="(610,440)"/>
+    <wire from="(470,520)" to="(610,520)"/>
+    <wire from="(760,280)" to="(760,340)"/>
+    <wire from="(270,600)" to="(470,600)"/>
+    <wire from="(340,500)" to="(540,500)"/>
+    <comp lib="1" loc="(570,570)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(290,330)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="label" val="0_IN"/>
+    </comp>
+    <comp lib="0" loc="(840,330)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(270,630)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(577,671)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(270,600)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(570,410)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp loc="(670,440)" name="D触发器"/>
+    <comp lib="0" loc="(840,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="0_OUT"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(670,520)" name="D触发器"/>
+    <comp lib="0" loc="(290,330)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="1" loc="(570,490)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp loc="(670,360)" name="D触发器"/>
+    <comp lib="1" loc="(570,330)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp loc="(670,280)" name="D触发器"/>
+  </circuit>
+  <circuit name="异步复位置0寄存器">
+    <a name="circuit" val="异步复位置0寄存器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="72">REG4</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="68" y="95">CLK</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="68" y="55">D_IN</text>
+      <rect fill="none" height="75" stroke="#000000" stroke-width="2" width="80" x="50" y="43"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="106" y="55">D_OUT</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="76" y="113">RST_N0</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="84">ASYN</text>
+      <ellipse cx="48.0" cy="110.0" fill="none" rx="3.0" ry="3.0" stroke="#000000"/>
+      <circ-port height="8" pin="290,310" width="8" x="46" y="46"/>
+      <circ-port height="8" pin="270,600" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="270,630" width="8" x="46" y="106"/>
+      <circ-port height="10" pin="840,330" width="10" x="125" y="45"/>
+      <circ-anchor facing="east" height="6" width="6" x="127" y="47"/>
+    </appear>
+    <wire from="(760,350)" to="(760,360)"/>
+    <wire from="(670,520)" to="(790,520)"/>
+    <wire from="(360,330)" to="(360,400)"/>
+    <wire from="(360,400)" to="(610,400)"/>
+    <wire from="(770,360)" to="(820,360)"/>
+    <wire from="(340,340)" to="(340,480)"/>
+    <wire from="(310,330)" to="(360,330)"/>
+    <wire from="(760,350)" to="(820,350)"/>
+    <wire from="(760,340)" to="(820,340)"/>
+    <wire from="(310,320)" to="(610,320)"/>
+    <wire from="(270,630)" to="(510,630)"/>
+    <wire from="(510,490)" to="(610,490)"/>
+    <wire from="(510,570)" to="(610,570)"/>
+    <wire from="(670,440)" to="(770,440)"/>
+    <wire from="(470,280)" to="(470,360)"/>
+    <wire from="(470,360)" to="(470,440)"/>
+    <wire from="(470,440)" to="(470,520)"/>
+    <wire from="(470,520)" to="(470,600)"/>
+    <wire from="(320,350)" to="(320,560)"/>
+    <wire from="(510,330)" to="(510,410)"/>
+    <wire from="(510,410)" to="(510,490)"/>
+    <wire from="(510,490)" to="(510,570)"/>
+    <wire from="(790,370)" to="(790,520)"/>
+    <wire from="(770,360)" to="(770,440)"/>
+    <wire from="(320,560)" to="(610,560)"/>
+    <wire from="(510,330)" to="(610,330)"/>
+    <wire from="(510,410)" to="(610,410)"/>
+    <wire from="(310,340)" to="(340,340)"/>
+    <wire from="(670,280)" to="(760,280)"/>
+    <wire from="(670,360)" to="(760,360)"/>
+    <wire from="(790,370)" to="(820,370)"/>
+    <wire from="(310,350)" to="(320,350)"/>
+    <wire from="(470,280)" to="(610,280)"/>
+    <wire from="(470,360)" to="(610,360)"/>
+    <wire from="(470,520)" to="(610,520)"/>
+    <wire from="(470,440)" to="(610,440)"/>
+    <wire from="(760,280)" to="(760,340)"/>
+    <wire from="(340,480)" to="(610,480)"/>
+    <wire from="(510,570)" to="(510,630)"/>
+    <wire from="(270,600)" to="(470,600)"/>
+    <comp loc="(670,440)" name="异步复位置0D触发器"/>
+    <comp loc="(670,280)" name="异步复位置0D触发器"/>
+    <comp lib="0" loc="(270,600)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(290,310)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(840,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="0_OUT"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(577,671)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp loc="(670,520)" name="异步复位置0D触发器"/>
+    <comp lib="0" loc="(290,310)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="label" val="0_IN"/>
+    </comp>
+    <comp loc="(670,360)" name="异步复位置0D触发器"/>
+    <comp lib="0" loc="(270,630)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
+    <comp lib="0" loc="(840,330)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+  </circuit>
+  <circuit name="异步复位置9寄存器">
+    <a name="circuit" val="异步复位置9寄存器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="106" y="55">D_OUT</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="68" y="55">D_IN</text>
+      <ellipse cx="48.0" cy="109.0" fill="none" rx="3.0" ry="3.0" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="76" y="113">RST_N1</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="72">REG4</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="68" y="95">CLK</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="84">SYN</text>
+      <rect fill="none" height="75" stroke="#000000" stroke-width="2" width="80" x="50" y="43"/>
+      <circ-port height="8" pin="290,310" width="8" x="46" y="46"/>
+      <circ-port height="8" pin="270,600" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="270,630" width="8" x="46" y="106"/>
+      <circ-port height="10" pin="840,330" width="10" x="125" y="45"/>
+      <circ-anchor facing="east" height="6" width="6" x="127" y="47"/>
+    </appear>
+    <wire from="(760,350)" to="(760,360)"/>
+    <wire from="(670,520)" to="(790,520)"/>
+    <wire from="(360,330)" to="(360,400)"/>
+    <wire from="(360,400)" to="(610,400)"/>
+    <wire from="(770,360)" to="(820,360)"/>
+    <wire from="(340,340)" to="(340,480)"/>
+    <wire from="(310,330)" to="(360,330)"/>
+    <wire from="(760,350)" to="(820,350)"/>
+    <wire from="(760,340)" to="(820,340)"/>
+    <wire from="(310,320)" to="(610,320)"/>
+    <wire from="(270,630)" to="(510,630)"/>
+    <wire from="(510,490)" to="(610,490)"/>
+    <wire from="(510,570)" to="(610,570)"/>
+    <wire from="(670,440)" to="(770,440)"/>
+    <wire from="(470,280)" to="(470,360)"/>
+    <wire from="(470,360)" to="(470,440)"/>
+    <wire from="(470,440)" to="(470,520)"/>
+    <wire from="(470,520)" to="(470,600)"/>
+    <wire from="(320,350)" to="(320,560)"/>
+    <wire from="(510,330)" to="(510,410)"/>
+    <wire from="(510,410)" to="(510,490)"/>
+    <wire from="(510,490)" to="(510,570)"/>
+    <wire from="(790,370)" to="(790,520)"/>
+    <wire from="(770,360)" to="(770,440)"/>
+    <wire from="(320,560)" to="(610,560)"/>
+    <wire from="(510,330)" to="(610,330)"/>
+    <wire from="(510,410)" to="(610,410)"/>
+    <wire from="(310,340)" to="(340,340)"/>
+    <wire from="(670,280)" to="(760,280)"/>
+    <wire from="(670,360)" to="(760,360)"/>
+    <wire from="(790,370)" to="(820,370)"/>
+    <wire from="(310,350)" to="(320,350)"/>
+    <wire from="(470,280)" to="(610,280)"/>
+    <wire from="(470,360)" to="(610,360)"/>
+    <wire from="(470,520)" to="(610,520)"/>
+    <wire from="(470,440)" to="(610,440)"/>
+    <wire from="(760,280)" to="(760,340)"/>
+    <wire from="(340,480)" to="(610,480)"/>
+    <wire from="(510,570)" to="(510,630)"/>
+    <wire from="(270,600)" to="(470,600)"/>
+    <comp loc="(670,360)" name="异步复位置0D触发器"/>
+    <comp lib="0" loc="(840,330)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(290,310)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="label" val="0_IN"/>
+    </comp>
+    <comp lib="0" loc="(270,600)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp loc="(670,520)" name="异步复位置1D触发器"/>
+    <comp lib="0" loc="(290,310)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="6" loc="(577,671)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp loc="(670,280)" name="异步复位置1D触发器"/>
+    <comp lib="0" loc="(270,630)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
+    <comp loc="(670,440)" name="异步复位置0D触发器"/>
+    <comp lib="0" loc="(840,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="0_OUT"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+  </circuit>
+  <circuit name="同步复位0-15计数器">
+    <a name="circuit" val="同步复位0-15计数器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(450,320)" to="(450,340)"/>
+    <wire from="(360,290)" to="(680,290)"/>
+    <wire from="(600,360)" to="(680,360)"/>
+    <wire from="(360,290)" to="(360,350)"/>
+    <wire from="(470,360)" to="(520,360)"/>
+    <wire from="(680,360)" to="(760,360)"/>
+    <wire from="(680,290)" to="(680,360)"/>
+    <wire from="(370,420)" to="(520,420)"/>
+    <wire from="(370,400)" to="(520,400)"/>
+    <wire from="(360,350)" to="(430,350)"/>
+    <wire from="(360,370)" to="(430,370)"/>
+    <comp lib="3" loc="(470,360)" name="Adder">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(370,400)" name="Clock"/>
+    <comp loc="(600,360)" name="同步复位置0寄存器"/>
+    <comp lib="0" loc="(760,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(567,466)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(370,420)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(360,370)" name="Constant">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(450,320)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+  </circuit>
+  <circuit name="异步复位0-15计数器">
+    <a name="circuit" val="异步复位0-15计数器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(450,320)" to="(450,340)"/>
+    <wire from="(360,290)" to="(680,290)"/>
+    <wire from="(470,360)" to="(520,360)"/>
+    <wire from="(600,360)" to="(680,360)"/>
+    <wire from="(360,290)" to="(360,350)"/>
+    <wire from="(680,360)" to="(760,360)"/>
+    <wire from="(680,290)" to="(680,360)"/>
+    <wire from="(370,420)" to="(520,420)"/>
+    <wire from="(370,400)" to="(520,400)"/>
+    <wire from="(360,350)" to="(430,350)"/>
+    <wire from="(360,370)" to="(430,370)"/>
+    <comp lib="6" loc="(558,464)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp loc="(600,360)" name="异步复位置0寄存器"/>
+    <comp lib="0" loc="(360,370)" name="Constant">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(450,320)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(370,420)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(370,400)" name="Clock"/>
+    <comp lib="0" loc="(760,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="3" loc="(470,360)" name="Adder">
+      <a name="width" val="4"/>
+    </comp>
+  </circuit>
+  <circuit name="异步复位9-0计数器">
+    <a name="circuit" val="异步复位9-0计数器"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(660,510)" to="(660,520)"/>
+    <wire from="(650,500)" to="(650,510)"/>
+    <wire from="(680,360)" to="(730,360)"/>
+    <wire from="(660,510)" to="(710,510)"/>
+    <wire from="(360,290)" to="(680,290)"/>
+    <wire from="(470,360)" to="(520,360)"/>
+    <wire from="(680,290)" to="(680,360)"/>
+    <wire from="(500,420)" to="(500,430)"/>
+    <wire from="(650,480)" to="(710,480)"/>
+    <wire from="(650,490)" to="(710,490)"/>
+    <wire from="(650,500)" to="(710,500)"/>
+    <wire from="(450,320)" to="(450,340)"/>
+    <wire from="(730,360)" to="(730,470)"/>
+    <wire from="(470,430)" to="(500,430)"/>
+    <wire from="(730,360)" to="(760,360)"/>
+    <wire from="(500,420)" to="(520,420)"/>
+    <wire from="(370,400)" to="(520,400)"/>
+    <wire from="(420,440)" to="(430,440)"/>
+    <wire from="(600,360)" to="(680,360)"/>
+    <wire from="(360,290)" to="(360,350)"/>
+    <wire from="(420,440)" to="(420,500)"/>
+    <wire from="(650,520)" to="(660,520)"/>
+    <wire from="(420,500)" to="(620,500)"/>
+    <wire from="(360,350)" to="(430,350)"/>
+    <wire from="(360,370)" to="(430,370)"/>
+    <wire from="(370,420)" to="(440,420)"/>
+    <comp lib="0" loc="(370,400)" name="Clock"/>
+    <comp lib="0" loc="(760,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(600,360)" name="异步复位置9寄存器"/>
+    <comp lib="6" loc="(562,553)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(730,470)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(360,370)" name="Constant">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="1" loc="(470,430)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="0" loc="(450,320)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(370,420)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(620,500)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="3" loc="(470,360)" name="Subtractor">
+      <a name="width" val="4"/>
+    </comp>
+  </circuit>
+  <circuit name="高电平有效复位信号示例">
+    <a name="circuit" val="高电平有效复位信号示例"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(470,410)" to="(500,410)"/>
+    <wire from="(540,400)" to="(570,400)"/>
+    <wire from="(630,350)" to="(660,350)"/>
+    <wire from="(630,400)" to="(660,400)"/>
+    <wire from="(470,350)" to="(570,350)"/>
+    <wire from="(470,390)" to="(510,390)"/>
+    <comp lib="0" loc="(470,410)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="/RST"/>
+    </comp>
+    <comp lib="0" loc="(660,350)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(540,400)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp loc="(630,350)" name="D触发器"/>
+    <comp lib="6" loc="(572,446)" name="Text">
+      <a name="text" val="王琛 PB20111696"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(470,350)" name="Clock">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(470,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(660,400)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="~Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+  </circuit>
+</project>
