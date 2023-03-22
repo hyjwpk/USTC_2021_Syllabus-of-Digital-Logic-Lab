@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/wangc/lab7/lab7.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/wangc/lab7/lab7.srcs/sim_1/new/test.v,1637464745,verilog,,,,test,,,,,,,,
+C:/Users/wangc/lab7/lab7.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1637322130,verilog,,C:/Users/wangc/lab7/lab7.srcs/sources_1/new/practice1.v,,dist_mem_gen_0,,,,,,,,
+C:/Users/wangc/lab7/lab7.srcs/sources_1/new/practice1.v,1637323087,verilog,,C:/Users/wangc/lab7/lab7.srcs/sim_1/new/test.v,,practice1,,,,,,,,
+C:/Users/wangc/lab7/lab7.srcs/sources_1/new/practice2.v,1637464941,verilog,,C:/Users/wangc/lab7/lab7.srcs/sim_1/new/test.v,,practice2,,,,,,,,

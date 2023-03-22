@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  5 17:39:43 2021
+# Process ID: 2748
+# Current directory: C:/Users/wangc/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16596 C:\Users\wangc\lab5\lab5.xpr
+# Log file: C:/Users/wangc/lab5/vivado.log
+# Journal file: C:/Users/wangc/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wangc/lab5/lab5.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_files -from_files C:/Users/wangc/lab5/lab5.srcs/sim_1/new/practice1.v -to_files C:/Users/wangc/lab5/lab5.srcs/sim_1/new/2.v -filesets [get_filesets *]
+update_files -from_files C:/Users/wangc/lab5/lab5.srcs/sim_1/new/practice2.v -to_files C:/Users/wangc/lab5/lab5.srcs/sim_1/new/test_bench.v -filesets [get_filesets *]
+launch_simulation
+source lab5.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top practice1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source practice1.tcl
+close_sim
